@@ -6,6 +6,7 @@ import { CreateUserParams, UpdateUserParams } from "@/types";
 import { handleError } from "../utils";
 import { connectToDatabase } from "../database";
 import Event from "@/lib/database/models/event.model";
+import Order from "@/lib/database/models/order.model";
 import User from "../database/models/user.model";
 
 export const createUser = async (user: CreateUserParams) => {
